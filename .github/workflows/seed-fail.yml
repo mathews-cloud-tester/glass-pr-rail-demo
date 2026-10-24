@@ -1,0 +1,9 @@
+name: seed-fail
+on:
+  pull_request:
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fail
+        run: exit 1
